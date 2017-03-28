@@ -1,29 +1,53 @@
-header
+.header
   position: fixed
   width: 100%
-  background-color: $white
-  box-shadow: 0 1px 2px $lightgrey
-  height: 50px
+  background-color: transparent
+  height: 70px
   z-index: 5
   top: 0
-  -webkit-transition: top 0.2s ease-in-out
-  -moz-transition: top 0.2s ease-in-out
-  transition: top 0.2s ease-in-out
+  transition: all 0.3s ease-in-out
+  color: $white
   .wrapper
+    height: 100%
     +clearfix
     .logo
+      color: $white
       position: relative
+      top: 25px
       float: left
-      font-size: 2em
-      top: -2px
+      font-size: 1.7em
+      font-weight: 600
+      letter-spacing: 1px
+      text-transform: uppercase
+      transition: all 0.3s ease-in-out
+    .logo-top-fixed
+      top: 7px
+      color: $black
     nav
+      height: 100%
+      position: relative
       float: right
       display: inline-block
-      padding-top: 9px
       a
+        color: $white
+        position: relative
+        top: 28px
         margin-left: 40px
-        font-size: 1.3em
-.active
-  color: $black
+        font-size: 1em
+        font-weight: 600
+        letter-spacing: 1px
+        text-transform: uppercase
+        transition: all 0.3s ease-in-out
+      .link-top-fixed
+        color: $black
+        top: 15px
 .nav-up
   top: -50px
+
+.active-menu
+  height: 60px
+  background: #fff
+  border-bottom: 1px solid rgba(0,0,0,0.1)
+
+.active
+  color: $orange !important
